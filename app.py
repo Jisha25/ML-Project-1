@@ -54,8 +54,6 @@ input_data = np.array([[X, Y, *SHIFT_encoded, *METHOD_encoded,
                         CENSUS_TRACT, LATITUDE, LONGITUDE, *BID_encoded, 
                         Hour, Start_Year, Start_Hour, End_Year, End_Hour]])
 
-# Debugging Step - Print Input Data
-st.write("Input Data for Prediction:", input_data)
 
 
 
