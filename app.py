@@ -66,11 +66,9 @@ offense_types = [
 # Predict Offense Type
 if st.sidebar.button("🔮 Predict Offense Type"):
     prediction = model.predict(input_data)
-    st.write("Raw Prediction Output:", prediction)  # Debugging output
     
     if prediction[0] < len(offense_types):  # Ensures index is valid
         predicted_offense = offense_types[prediction[0]]
-        st.success(f"🚔 Predicted Offense: {predicted_offense}")
     else:
         st.error("❗ Prediction output is out of range. Check model training labels.")
 
